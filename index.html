@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Friends Quiz</title>
+    <link rel="stylesheet" href="float-grid.css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class = "all-container">
+      
+      <header class="title-section">
+        <div class="start-section">
+          <img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAX4AAAAJGYyNWYzNjJjLTM3YTEtNDVjNS1hNzEzLTA4YmRkMDk2M2RmMA.jpg" alt="friends logo" class="main-image">
+          <button id="begin" class="begin-btn">Click to begin</button>
+        </div>
+      </header>
+  
+  <!--Question goes here--> 
+        <section class="quiz-section">
+          <div class="logo-container">
+            <img src="http://media-s3-us-east-1.ceros.com/anders-newman/images/2017/03/30/053673bda858c668d705d2bf4294dc97/friendslogo.jpg" class="friends-logo" alt="white frends letters on a black background">
+          </div>
+          <div class="mainbox">
+            <div id="question" class="question-container"></div>
+            <div class="image-container">
+              <div id="image">
+                  <img />
+              </div>
+            </div>
+            <form id="form" class="form-container">
+              <div class="choice-container">
+                <label for="answerChoice">
+                  <input type="radio" name="answerChoice" class="answerChoice" value="0"/>
+                  <span class="answer-container"></span>
+                </label><br>
+                <label for="answerChoice">
+                  <input type="radio" name="answerChoice" class="answerChoice" value="1"/>
+                  <span class="answer-container"></span>
+                </label><br>
+                <label for="answerChoice">
+                  <input type="radio" name="answerChoice" class="answerChoice" value="2"/>
+                  <span class="answer-container"></span>
+                </label><br>
+                <label for="answerChoice">
+                  <input type="radio" name="answerChoice" class="answerChoice" value="3"/>
+                  <span class="answer-container"></span>
+                </label>
+              </div>
+      <!--statusbar goes here-->
+              <div class="nav-container row">
+                <div class="box"><span id="status"></span></div>
+                <div class="box"><span id="score"></span></div>
+                <button type="submit" id="checkAnswer" class="btn box">submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        
+        <section class="feedback-section">
+          <div class="popup-box">
+            <button type="button" class="close-button btn" role="button">x</button>
+            <span id="popup-text"></span>
+            <div id="popup-img">
+            </div>
+          </div>
+        </section>
+        
+        <section class="result-section">
+          <img src="http://media-s3-us-east-1.ceros.com/anders-newman/images/2017/03/30/053673bda858c668d705d2bf4294dc97/friendslogo.jpg" class="friends-logo">
+          <h2 id= "result-text">Result</h2>
+          <button type="button" class="retry-button btn">Try Again?</button>
+        </section>
+      </div>
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="questions.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
